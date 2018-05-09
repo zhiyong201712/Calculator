@@ -39,7 +39,7 @@ public:
 
 	void testSub()
 	{
-		CPPUNIT_ASSERT(11 == m_calculator->sub(2, 1));
+		CPPUNIT_ASSERT(1 == m_calculator->sub(2, 1));
 	}
 
 private:
