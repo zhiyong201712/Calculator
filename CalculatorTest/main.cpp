@@ -63,11 +63,11 @@ int main()
 
 	runner.run(result);
 
-	// ´òÓ¡µ½¿ØÖÆÌ¨
+	// æ‰“å°åˆ°æ§åˆ¶å°
 	CppUnit::TextOutputter textOutputter(&resultCollector, std::cout);
 	textOutputter.write();
 
-	// ´òÓ¡µ½ xml ÎÄ¼ş£¬ÒÔ±ã xUnit ²å¼ş´¦Àí
+	// æ‰“å°åˆ° xml æ–‡ä»¶ï¼Œä»¥ä¾¿ xUnit æ’ä»¶å¤„ç†
 	std::ofstream fout("TEST-Calculator.xml");
 	if (fout)
 	{
@@ -76,6 +76,6 @@ int main()
 		fout.close();
 	}
 
-	// ·µ»Ø 0 ±íÊ¾³É¹¦
+	// è¿”å› 0 è¡¨ç¤ºæˆåŠŸ
 	return resultCollector.wasSuccessful() ? 0 : 1;
 }
